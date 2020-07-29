@@ -25,7 +25,7 @@ $(function () {
       this.linkMenu.on('click', function (e) {
         e.preventDefault();
         var dataMenu = $(this).attr('data-menu');
-        var dropdown = $('.menu-dropdown.' + dataMenu);
+        var dropdown = $(".menu-dropdown.".concat(dataMenu));
         var selecionado = $(this);
         Menu.mostraMenu(selecionado, dropdown);
       });

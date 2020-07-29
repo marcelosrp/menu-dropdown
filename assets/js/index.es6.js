@@ -15,7 +15,6 @@ $(() => {
 	});
 
 	const Menu = {
-
 		linkMenu: null,
 		dropdown: null,
 		hamburger: null,
@@ -32,9 +31,9 @@ $(() => {
 			this.linkMenu.on('click', function(e) {
 				e.preventDefault();
 
-				let dataMenu = $(this).attr('data-menu');
-				let dropdown = $('.menu-dropdown.'+dataMenu);
-				let selecionado = $(this);
+				const dataMenu = $(this).attr('data-menu');
+				const dropdown = $(`.menu-dropdown.${dataMenu}`);
+				const selecionado = $(this);
 
 				Menu.mostraMenu(selecionado, dropdown);
 			});
@@ -47,27 +46,51 @@ $(() => {
 		mostraMenu: function(selecionado, dropdown) {
 			/* Desktop */
 			if( selecionado.next('ul').hasClass('is-hidden') ){
-				selecionado.addClass('selecionado').next('ul').removeClass('is-hidden').end().parent('ul');
-				selecionado.parent('.has-children').siblings('.has-children').children('ul').addClass('is-hidden').end().children('a').removeClass('selecionado');
+				selecionado
+					.addClass('selecionado')
+					.next('ul')
+					.removeClass('is-hidden')
+					.end()
+					.parent('ul');
+				
+				selecionado
+					.parent('.has-children')
+					.siblings('.has-children')
+					.children('ul')
+					.addClass('is-hidden')
+					.end()
+					.children('a')
+					.removeClass('selecionado');
 			}else{
-				selecionado.removeClass('selecionado').next('ul').addClass('is-hidden').end().parent('.has-children').parent('ul');
+				selecionado
+					.removeClass('selecionado')
+					.next('ul')
+					.addClass('is-hidden')
+					.end()
+					.parent('.has-children')
+					.parent('ul');
 			}
 		},
 
 		ativaMobile: function() {
-			var wrap = $('.wrap');
+			const wrap = $('.wrap');
 
 			if( !this.hamburger.hasClass('is-active') ){
 
 				$(this.hamburger).addClass('is-active');
 
 				this.linkMenuMobile.on('click', function(e) {
-					let selecionado = $(this);
+					const selecionado = $(this);
 
 					wrap.addClass('esconde');
 
 					if( selecionado.next('ul').hasClass('is-hidden') ){
-						selecionado.addClass('selecionado').next('ul').removeClass('is-hidden').end().parent('ul');
+						selecionado
+							.addClass('selecionado')
+							.next('ul')
+							.removeClass('is-hidden')
+							.end()
+							.parent('ul');
 					}
 				});
 
@@ -84,7 +107,12 @@ $(() => {
 		},
 
 		resetaMobile: function(ativo) {
-			$(ativo).parent('ul').addClass('is-hidden').parent('.has-children').parent('ul');
+			$(ativo)
+				.parent('ul')
+				.addClass('is-hidden')
+				.parent('.has-children')
+				.parent('ul');
+
 			$('.link-menu-mobile').removeClass('selecionado');
 			$('.wrap').removeClass('esconde');
 			$('.nav-dropdown-mobile').addClass('is-hidden');
