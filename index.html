@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,500&display=swap" 
+        rel="stylesheet"
+    >
+    <link 
+        rel="stylesheet" 
+        href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" 
+        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+        crossorigin="anonymous"
+    >
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/jquery.sidr/2.2.1/stylesheets/jquery.sidr.dark.min.css">
+    <link rel="stylesheet" href="assets/css/hamburgers.min.css">
+    <link rel="stylesheet" href="assets/css/estilo.css">
+</head>
+<body>
+    <!-- Mobile button -->
+    <div class="menu-mobile visible-xs visible-sm">
+        <button class="hamburger hamburger--elastic" type="button">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+    </div>
+
+    <!-- Desktop -->
+    <nav class="hidden-xs hidden-sm menu">
+        <div class="container">
+            <ul class="wrap-menu">
+                <li>
+                    <a class="link-menu" href="#">menu 1</a>
+                </li>
+                <li class="has-children">
+                    <a data-menu="menu2" class="link-menu" href="#">menu 2 (com submenu)</a>
+                    <ul class="nav-dropdown is-hidden">
+                        <li>
+                            <div class="menu-dropdown menu2">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <div class="d-flex">
+                                                <div class="item lista-menu">
+                                                    <a class="link-dropdown__lista-item" href="#">Submenu 2</a>
+                                                    <a class="link-dropdown__lista-item" href="#">Submenu 2</a>
+                                                    <a class="link-dropdown__lista-item" href="#">Submenu 2</a>
+                                                    <a class="link-dropdown__lista-item" href="#">Submenu 2</a>
+                                                    <a class="link-dropdown__lista-item" href="#">Submenu 2</a>
+                                                    <a class="link-dropdown__lista-item" href="#">Submenu 2</a>
+                                                    <a class="link-dropdown__lista-item" href="#">Submenu 2</a>
+                                                </div>
+                                                <div class="item thumbs-item">
+                                                    <div class="d-flex">
+                                                        <div class="item thumbs">
+                                                            <img 
+                                                                src="assets/img/thumb.jpg" 
+                                                                alt="Artes Marciais" 
+                                                                class="img-responsive"
+                                                            >
+                                                            <a href="#">
+                                                                Sub menu 2
+                                                            </a>
+                                                        </div>
+                                                        <div class="item thumbs">
+                                                            <img 
+                                                                src="assets/img/thumb.jpg" 
+                                                                alt="Artes Marciais" 
+                                                                class="img-responsive"
+                                                            >
+                                                            <a href="#">
+                                                                Sub menu 2
+                                                            </a>
+                                                        </div>
+                                                        <div class="item thumbs">
+                                                            <img 
+                                                                src="assets/img/thumb.jpg" 
+                                                                alt="Artes Marciais" 
+                                                                class="img-responsive"
+                                                            >
+                                                            <a href="#">
+                                                                Sub menu 2
+                                                            </a>
+                                                        </div>
+                                                        <div class="item thumbs">
+                                                            <img 
+                                                                src="assets/img/thumb.jpg" 
+                                                                alt="Artes Marciais" 
+                                                                class="img-responsive"
+                                                            >
+                                                            <a href="#">
+                                                                Sub menu 2
+                                                            </a>
+                                                        </div>
+                                                        <div class="item thumbs">
+                                                            <img 
+                                                                src="assets/img/thumb.jpg" 
+                                                                alt="Artes Marciais" 
+                                                                class="img-responsive"
+                                                            >
+                                                            <a href="#">
+                                                                Sub menu 2
+                                                            </a>
+                                                        </div>
+                                                        <div class="item thumbs">
+                                                            <img 
+                                                                src="assets/img/thumb.jpg" 
+                                                                alt="Artes Marciais" 
+                                                                class="img-responsive"
+                                                            >
+                                                            <a href="#">
+                                                                Sub menu 2
+                                                            </a>
+                                                        </div>
+                                                        <div class="item thumbs">
+                                                            <img 
+                                                                src="assets/img/thumb.jpg" 
+                                                                alt="Artes Marciais" 
+                                                                class="img-responsive"
+                                                            >
+                                                            <a href="#">
+                                                                Sub menu 2
+                                                            </a>
+                                                        </div>
+                                                        <div class="thumbs-total">
+                                                            <a href="#">
+                                                                <span>+23</span>
+                                                                lorem ipsum
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="has-children">
+                    <a data-menu="menu3" class="link-menu" href="#">menu 3 (com submenu)</a>
+                    <ul class="nav-dropdown is-hidden">
+                        <li>
+                            <div class="menu-dropdown menu3">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <div class="d-flex">
+                                                <div class="item lista-menu">
+                                                    <a class="link-dropdown__lista-item" href="#">Submenu 3</a>
+                                                    <a class="link-dropdown__lista-item" href="#">Submenu 3</a>
+                                                    <a class="link-dropdown__lista-item" href="#">Submenu 3</a>
+                                                    <a class="link-dropdown__lista-item" href="#">Submenu 3</a>
+                                                    <a class="link-dropdown__lista-item" href="#">Submenu 3</a>
+                                                    <a class="link-dropdown__lista-item" href="#">Submenu 3</a>
+                                                    <a class="link-dropdown__lista-item" href="#">Submenu 3</a>
+                                                </div>
+                                                <div class="item thumbs-item">
+                                                    <div class="d-flex">
+                                                        <div class="item thumbs">
+                                                            <img 
+                                                                src="assets/img/thumb.jpg" 
+                                                                alt="Artes Marciais" 
+                                                                class="img-responsive"
+                                                            >
+                                                            <a href="#">
+                                                                Sub menu 3
+                                                            </a>
+                                                        </div>
+                                                        <div class="item thumbs">
+                                                            <img 
+                                                                src="assets/img/thumb.jpg" 
+                                                                alt="Artes Marciais" 
+                                                                class="img-responsive"
+                                                            >
+                                                            <a href="#">
+                                                                Sub menu 3
+                                                            </a>
+                                                        </div>
+                                                        <div class="item thumbs">
+                                                            <img 
+                                                                src="assets/img/thumb.jpg" 
+                                                                alt="Artes Marciais" 
+                                                                class="img-responsive"
+                                                            >
+                                                            <a href="#">
+                                                                Sub menu 3
+                                                            </a>
+                                                        </div>
+                                                        <div class="item thumbs">
+                                                            <img 
+                                                                src="assets/img/thumb.jpg" 
+                                                                alt="Artes Marciais" 
+                                                                class="img-responsive"
+                                                            >
+                                                            <a href="#">
+                                                                Sub menu 3
+                                                            </a>
+                                                        </div>
+                                                        <div class="item thumbs">
+                                                            <img 
+                                                                src="assets/img/thumb.jpg" 
+                                                                alt="Artes Marciais" 
+                                                                class="img-responsive"
+                                                            >
+                                                            <a href="#">
+                                                                Sub menu 3
+                                                            </a>
+                                                        </div>
+                                                        <div class="item thumbs">
+                                                            <img 
+                                                                src="assets/img/thumb.jpg" 
+                                                                alt="Artes Marciais" 
+                                                                class="img-responsive"
+                                                            >
+                                                            <a href="#">
+                                                                Sub menu 3
+                                                            </a>
+                                                        </div>
+                                                        <div class="item thumbs">
+                                                            <img 
+                                                                src="assets/img/thumb.jpg" 
+                                                                alt="Artes Marciais" 
+                                                                class="img-responsive"
+                                                            >
+                                                            <a href="#">
+                                                                Sub menu 3
+                                                            </a>
+                                                        </div>
+                                                        <div class="thumbs-total">
+                                                            <a href="#">
+                                                                <span>+23</span>
+                                                                lorem ipsum
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="link-menu" href="#">menu 4</a>
+                </li>
+                <li>
+                    <a class="link-menu" href="#">menu 5</a>
+                </li>
+                <li class="has-children">
+                    <a data-menu="menu6" class="link-menu" href="#">menu 6 (com submenu)</a>
+                    <ul class="nav-dropdown is-hidden">
+                        <li>
+                            <div class="menu-dropdown menu6">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <div class="d-flex">
+                                                <div class="item lista-menu">
+                                                    <a class="link-dropdown__lista-item" href="#">Submenu 6</a>
+                                                    <a class="link-dropdown__lista-item" href="#">Submenu 6</a>
+                                                    <a class="link-dropdown__lista-item" href="#">Submenu 6</a>
+                                                    <a class="link-dropdown__lista-item" href="#">Submenu 6</a>
+                                                    <a class="link-dropdown__lista-item" href="#">Submenu 6</a>
+                                                    <a class="link-dropdown__lista-item" href="#">Submenu 6</a>
+                                                    <a class="link-dropdown__lista-item" href="#">Submenu 6</a>
+                                                    <a class="link-dropdown__lista-item" href="#">Submenu 6</a>
+                                                </div>
+                                                <div class="item thumbs-item">
+                                                    <div class="d-flex">
+                                                        <div class="item thumbs">
+                                                            <img 
+                                                                src="assets/img/thumb.jpg" 
+                                                                alt="Artes Marciais" 
+                                                                class="img-responsive"
+                                                            >
+                                                            <a href="#">
+                                                                Sub menu 6
+                                                            </a>
+                                                        </div>
+                                                        <div class="item thumbs">
+                                                            <img 
+                                                                src="assets/img/thumb.jpg" 
+                                                                alt="Artes Marciais" 
+                                                                class="img-responsive"
+                                                            >
+                                                            <a href="#">
+                                                                Sub menu 6
+                                                            </a>
+                                                        </div>
+                                                        <div class="item thumbs">
+                                                            <img 
+                                                                src="assets/img/thumb.jpg" 
+                                                                alt="Artes Marciais" 
+                                                                class="img-responsive"
+                                                            >
+                                                            <a href="#">
+                                                                Sub menu 6
+                                                            </a>
+                                                        </div>
+                                                        <div class="item thumbs">
+                                                            <img 
+                                                                src="assets/img/thumb.jpg" 
+                                                                alt="Artes Marciais" 
+                                                                class="img-responsive"
+                                                            >
+                                                            <a href="#">
+                                                                Sub menu 6
+                                                            </a>
+                                                        </div>
+                                                        <div class="item thumbs">
+                                                            <img 
+                                                                src="assets/img/thumb.jpg" 
+                                                                alt="Artes Marciais" 
+                                                                class="img-responsive"
+                                                            >
+                                                            <a href="#">
+                                                                Sub menu 6
+                                                            </a>
+                                                        </div>
+                                                        <div class="item thumbs">
+                                                            <img 
+                                                                src="assets/img/thumb.jpg" 
+                                                                alt="Artes Marciais" 
+                                                                class="img-responsive"
+                                                            >
+                                                            <a href="#">
+                                                                Sub menu 6
+                                                            </a>
+                                                        </div>
+                                                        <div class="item thumbs">
+                                                            <img 
+                                                                src="assets/img/thumb.jpg" 
+                                                                alt="Artes Marciais" 
+                                                                class="img-responsive"
+                                                            >
+                                                            <a href="#">
+                                                                Sub menu 6
+                                                            </a>
+                                                        </div>
+                                                        <div class="thumbs-total">
+                                                            <a href="#">
+                                                                <span>+23</span>
+                                                                lorem ipsum
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Menu mobile xs/sm-->
+    <div id="sidr" class="d-none">
+        <ul class="wrap">
+            <li><a class="link-menu-mobile" href="#">Menu 1</a></li>
+            <li class="has-children">
+                <a class="link-menu-mobile" href="#">Menu 2 (com submenu)</a>
+                <ul class="nav-dropdown-mobile is-hidden">
+                    <li class="voltar-menu"><a href="#"><i class="fas fa-arrow-left"></i> menu</a></li>
+                    <li class="titulo">Titulo submenu 2</li>
+                    <li><a class="link-dropdown-menu-mobile" href="#">Submenu 2</a></li>
+                    <li><a class="link-dropdown-menu-mobile" href="#">Submenu 2</a></li>
+                    <li><a class="link-dropdown-menu-mobile" href="#">Submenu 2</a></li>
+                    <li><a class="link-dropdown-menu-mobile" href="#">Submenu 2</a></li>
+                    <li><a class="link-dropdown-menu-mobile" href="#">Submenu 2</a></li>
+                </ul>
+            </li>
+            <li class="has-children">
+                <a class="link-menu-mobile" href="#">Menu 3 (com submenu)</a>
+                <ul class="nav-dropdown-mobile is-hidden">
+                    <li class="voltar-menu"><a href="#"><i class="fas fa-arrow-left"></i> menu</a></li>
+                    <li class="titulo">Titulo submenu 3</li>
+                    <li><a class="link-dropdown-menu-mobile" href="#">Submenu 3</a></li>
+                    <li><a class="link-dropdown-menu-mobile" href="#">Submenu 3</a></li>
+                    <li><a class="link-dropdown-menu-mobile" href="#">Submenu 3</a></li>
+                    <li><a class="link-dropdown-menu-mobile" href="#">Submenu 3</a></li>
+                    <li><a class="link-dropdown-menu-mobile" href="#">Submenu 3</a></li>
+                </ul>
+            </li>
+            <li><a class="link-menu-mobile" href="#">Menu 4</a></li>
+            <li><a class="link-menu-mobile" href="#">Menu 5</a></li>
+            <li><a class="link-menu-mobile" href="#">Menu 6</a></li>
+        </ul>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script 
+        src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" 
+        integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" 
+        crossorigin="anonymous">
+    </script>
+    <script src="//cdn.jsdelivr.net/jquery.sidr/2.2.1/jquery.sidr.min.js"></script>
+    <script src="assets/js/fontawesome-all.min.js"></script>
+    <script src="assets/js/index.js"></script>
+</body>
+</html>

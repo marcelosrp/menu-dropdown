@@ -1,0 +1,27 @@
+{
+  "name": "menu_plugin",
+  "version": "1.0.0",
+  "description": "Plugin menu javascript",
+  "main": "index.js",
+  "scripts": {
+    "grunt": "grunt",
+    "vigilante": "grunt"
+  },
+  "author": "Marcelo Soares",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "babel-preset-env": "^1.7.0",
+    "grunt": "^1.0.4",
+    "grunt-babel": "^8.0.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "load-grunt-tasks": "^5.1.0",
+    "sass": "^1.22.10"
+  }
+}
