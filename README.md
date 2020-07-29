@@ -12,7 +12,4 @@ cd resources;
 <img src="https://raw.githubusercontent.com/marcelosrp/menu-dropdown/master/screenshot/print1.png" alt="print desktop" />
 <br />
 <br />
-<div>
-<img width="300" src="https://raw.githubusercontent.com/marcelosrp/menu-dropdown/master/screenshot/print2.png" alt="print mobile" />
-<img width="300" src="https://raw.githubusercontent.com/marcelosrp/menu-dropdown/master/screenshot/print3.png" alt="print mobile" />
-</div>
+<img src="https://raw.githubusercontent.com/marcelosrp/menu-dropdown/master/screenshot/print4.png" alt="print mobile" />
